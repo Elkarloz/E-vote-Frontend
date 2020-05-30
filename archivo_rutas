@@ -1,0 +1,39 @@
+
+Personas{
+	consultar----
+	agregar-----
+}
+votantes{
+	consultar------
+	agregar--------
+	Importar_Archivo----
+	datos_personales-----
+}
+Aspirantes{
+	Consultar_inscripciones---
+	Consultar_Validados-------
+	Registrar_inscripciones---
+	Consultar_estado----------
+	Actulazar_informacion-----
+	Agregar_documentacion-----
+	Eliminar_inscripcion------
+}
+Candidatos{
+	Consultar------
+	actualizar_informacion---
+	Eliminar_candidatura-----
+}
+Reportes{
+	reporte_votacion--------
+}
+Parametrizacion{
+	Programa_formacion-----
+	jornada----------------
+	sexo-------------------
+	tipo_documento---------
+	Funciones--------------
+}
+propuestas{
+	Consultar
+	Agregar
+}
