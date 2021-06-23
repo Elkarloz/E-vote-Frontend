@@ -5,9 +5,9 @@
         <div class="col-md-12 my-auto">
           <img src="./Index/Logo.svg" width="1000px">
           <h3 id="text">Recuerda tú decisión también cuenta</h3>
-          <a href="/login">
+          <router-link to="/login">
             <button style="background-color:#1D7157; color: white;" class="btn" type="submit">¡A votar!</button>
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

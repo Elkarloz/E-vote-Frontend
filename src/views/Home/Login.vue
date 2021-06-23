@@ -11,7 +11,7 @@
                     <div class="col-xl-4 col-lg-6 col-md-7 my-auto p-0">
                         <div class="authentication-form mx-auto">
                             <div class="text-center" style="margin-bottom: 10%">
-                                <a href="#"><img src="../Home/Index/Logo.svg" alt=""></a>
+                                <router-link to="#"><img src="../Home/Index/Logo.svg" alt=""></router-link>
                             </div>
                             <h3>Inicie sesion en E-Vote</h3>
                             <p>Bienvenido!</p>
@@ -27,7 +27,7 @@
                                 <div class="row">
                                    
                                     <div class="col text-left">
-                                        <a href="forgot-password.html">¿ Olvido su contraseña ?</a>
+                                        <a href="forgot-password.html"><!-- ¿ Olvido su contraseña ? --></a>
                                     </div>
                                 </div>
                                 <div class="sign-btn text-center">
@@ -35,7 +35,7 @@
                                 </div>
                             </form>
                             <div class="register">
-                                <p>¿ No cuenta con Usuario ? <a href="Registro">Registrese!</a></p>
+                                <p>¿ No cuenta con Usuario ? <router-link to="Registro">Registrese!</router-link></p>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,8 @@ export default {
                     localStorage.setItem('nombre',data.PerNombre+ ' '+data.PerApellido)
                     localStorage.setItem('sessionrol','');
                     localStorage.setItem('CodigoPersona',data.PerCodigo);
-                    window.location.href = '/dashboard'
+                    localStorage.setItem('bugdelMenu',null)
+                    this.$router.push({ path: '/dashboard', replace: true })
                    
                 }else{
                     this.mensaje=data.message;

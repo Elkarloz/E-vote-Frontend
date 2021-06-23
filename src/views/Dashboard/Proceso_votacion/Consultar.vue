@@ -95,8 +95,8 @@
                     <div class="row">
                       <div class="col-sm-6 offset-3">
                          <select class="form-control" v-model="año">
-                      <option v-for="(item, index) in rango" :key="index">{{item}}</option>
-                    </select>   
+                            <option v-for="(item, index) in rango" :key="index">{{item}}</option>
+                        </select>   
                       </div>
                       <div class="col-sm-0">
                         <i class="ik ik-calendar ik-2x"></i>

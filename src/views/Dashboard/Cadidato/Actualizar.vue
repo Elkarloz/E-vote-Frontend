@@ -91,6 +91,7 @@ export default {
             //console.log(this.candidatoID.CanCodigo)
             //console.log(this.candidatoID.CanCodigo);
             this.rutaimg=this.rutaimg+this.candidatoID.CanCodigo;
+            console.log("entrar")
             console.log(this.candidatoID.CanFotoRuta);
           }
         })

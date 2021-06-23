@@ -11,10 +11,10 @@
             </div>
             <div class="main-menubar d-flex align-items-center">
               <nav class="hide nav">
-                <a href="/">Home</a><!--Index -->
-                <a href="/login">Login</a>
-                <a href="/about" v-show="jorVot.ProVotCodigo!=''">Consultar documento</a>
-				        <a href="/Tarjeton" v-show="jorVot.ProVotCodigo!=''">Jornada votacion activa</a>
+                <router-link to="/">Home</router-link><!--Index -->
+                <router-link to="/login">Login</router-link>
+                <router-link to="/about" v-show="jorVot.ProVotCodigo!=''">Consultar documento</router-link>
+				        <router-link to="/Tarjeton" v-show="jorVot.ProVotCodigo!=''">Jornada votacion activa</router-link>
               </nav>
               <div class="menu-bar">
                 <span class="lnr lnr-menu"></span>

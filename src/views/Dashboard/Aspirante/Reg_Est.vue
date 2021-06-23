@@ -139,9 +139,14 @@ export default {
             .then( res => res.json())
             .then(data=> {
                 //console.log(data.token);
+                console.log(data.message)
+                if (data.message === "Ocurrio un error") {
+                    alert("No te puedes registrar, revisa si hoy es fecha de incricion a aspirante, o si existe un proceso de votacion activo")
+                }
                 if (data[0][0].Mensaje === 'No te puedes registrar, revisa si hoy es fecha de incricion a aspirante, o si existe un proceso de votacion activo') {
                     this.mensaje = data[0][0].Mensaje                    
                     this.abrirError();
+                    console.log("entro")
                 } else {
                     window.location.href = '/login'
                 }

@@ -151,14 +151,18 @@
 </style>
 
 <script>
-$(document).on("click",function(e) {             
-  var container = $("#calendar");                
-    if (!container.is(e.target) && container.has(e.target).length === 0) { 
-        document.getElementById('block-years').style.display = "none";              
+  $(document).on("click",function(e) {             
+    let container = $("#calendar");  
+    if (container[0] !== undefined) {
+      if (!container.is(e.target) && container.has(e.target).length === 0) { 
+          document.getElementById('block-years').style.display = "none";              
       }else{
-        document.getElementById('block-years').style.display = "block";
+          document.getElementById('block-years').style.display = "block";
       }
-});
+    }
+              
+      
+  });
 export default {
   data() {
     return {
